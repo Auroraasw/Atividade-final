@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acolhe+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho do site -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-area">
+                <div class="logo-icone">🛡️</div>
+                <div>
+                    <h1>acolhe+</h1>
+                    <p class="subtitulo">Informações que salvam vidas</p>
+                </div>
+            </div>
+            <nav>
+                <button type="button" class="nav-btn ativo" onclick="abrirAba('inicio', this)">Início</button>
+                <button type="button" class="nav-btn" onclick="abrirAba('orientacoes', this)">Orientações</button>
+                <button type="button" class="nav-btn" onclick="abrirAba('telefones', this)">Telefones Úteis</button>
+                <button type="button" class="nav-btn" onclick="abrirAba('sobre', this)">Sobre Nós</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="conteudo-principal">
+
+        <!-- Seção inicial -->
+        <section id="inicio" class="visivel">
+            <div class="hero-container">
+                <div class="hero-texto">
+                    <h2>Informação certa<br>na hora que você precisa.</h2>
+                    <p>Aqui você encontra orientações e contatos importantes para situações de emergência e desastres.</p>
+                    <button type="button" class="btn-principal" onclick="abrirAba('orientacoes')">Ver orientações</button>
+                </div>
+                <div class="hero-imagem">
+
+                    <img src="imagens/casa.jpg" alt="Ilustração Casa e Chuva"> 
+                </div>
+            </div>
+
+            <div class="acesso-rapido-container">
+                <h3 class="titulo-secao">Acesso rápido</h3>
+                <div class="grid-cartoes">
+                    <div class="card" onclick="abrirAba('orientacoes')">
+                        <div class="card-icone">📋</div>
+                        <h4>Orientações</h4>
+                        <p>Saiba como agir em cada situação.</p>
+                    </div>
+
+                    <div class="card" onclick="abrirAba('telefones')">
+                        <div class="card-icone">📞</div>
+                        <h4>Telefones Úteis</h4>
+                        <p>Contatos importantes emergências.</p>
+                    </div>
+
+                    <div class="card" onclick="abrirAba('sobre')">
+                        <div class="card-icone">ℹ️</div>
+                        <h4>Sobre Nós</h4>
+                        <p>Conheça o projeto Info Seguro.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de orientações -->
+        <section id="orientacoes">
+            <h2 class="titulo-pagina">Orientações</h2>
+            <p class="descricao-pagina">Saiba como agir antes, durante e depois de situações de emergência.</p>
+            
+            <div class="grid-conteudo">
+                <div class="card-orientacao">
+                    <h3>🌧️ Chuvas Fortes</h3>
+                    <p>Fique atento às previsões e procure um local seguro.</p>
+                </div>
+                <div class="card-orientacao">
+                    <h3>🌊 Enchentes</h3>
+                    <p>Evite áreas alagadas e não atravesse locais com correnteza.</p>
+                </div>
+                <div class="card-orientacao">
+                    <h3>⛰️ Deslizamentos</h3>
+                    <p>Em caso de risco, deixe o local e procure um abrigo seguro.</p>
+                </div>
+                <div class="card-orientacao">
+                    <h3>💨 Vendavais</h3>
+                    <p>Fique longe de árvores, postes e estruturas frágeis.</p>
+                </div>
+            </div>
+
+            <div class="dicas-etapas">
+                <div>
+                    <h4>Antes</h4>
+                    <ul>
+                        <li>Fique atento às previsões do tempo.</li>
+                        <li>Conheça os abrigos próximos.</li>
+                        <li>Deixe documentos importantes em local seguro.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Durante</h4>
+                    <ul>
+                        <li>Procure um local seguro.</li>
+                        <li>Evite sair de casa sem necessidade.</li>
+                        <li>Não atravesse áreas alagadas.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Depois</h4>
+                    <ul>
+                        <li>Verifique se existem riscos na sua casa.</li>
+                        <li>Evite fios elétricos caídos.</li>
+                        <li>Siga as orientações das autoridades.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de contatos -->
+        <section id="telefones">
+            <h2 class="titulo-pagina">Telefones Úteis</h2>
+            <p class="descricao-pagina">Em uma situação de emergência, procure ajuda pelos canais oficiais.</p>
+            
+            <div class="grid-cartoes"> <!---->
+                <div class="card">
+                    <div class="card-icone">🚒</div>
+                    <h4>Corpo de Bombeiros</h4>
+                    <p class="numero-tel">193</p>
+                </div>
+                <div class="card">
+                    <div class="card-icone">🚑</div>
+                    <h4>SAMU</h4>
+                    <p class="numero-tel">192</p>
+                </div>
+                <div class="card">
+                    <div class="card-icone">🛡️</div>
+                    <h4>Defesa Civil</h4>
+                    <p class="numero-tel">199</p>
+                </div>
+                <div class="card">
+                    <div class="card-icone">👮</div>
+                    <h4>Polícia Militar</h4>
+                    <p class="numero-tel">190</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção sobre o projeto -->
+        <section id="sobre">
+            <h2 class="titulo-pagina">Sobre Nós</h2>
+            <div class="texto-sobre">
+                <p>O Acolhe+ nasceu da necessidade urgente de unir tecnologia, solidariedade e informação clara em momentos onde cada segundo conta.
+                     Fundado por um grupo de voluntários e especialistas em gestão de riscos, o portal surgiu para preencher a lacuna de comunicação rápida entre as
+                      autoridades, abrigos e a população atingida por eventos climáticos extremos.</p>
+                        <p>Acreditamos que o acesso rápido à informação correta não apenas reduz o pânico, mas efetivamente salva vidas e preserva a dignidade das famílias em momentos de vulnerabilidade.
+
+                        
+                            Este projeto foi desenvolvidos por estudantes da Turma de Desenvolvimento de Sistemas do Sesi Senai</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2026 Acolhe+ - Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- JavaScript para trocar as abas -->
+    <script src="script.js">
+ 
+    </script>
+</body>
+</html>
